@@ -100,7 +100,7 @@ li {
 
 .introducao h1::before {
   content: "";
-  background-image: url("./img/detalhe.svg");
+  background-image: url("/img/detalhe.svg");
   background-size: cover;
   width: 115px;
   height: 115px;
@@ -405,7 +405,7 @@ li {
 .grid-contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 160px 180px 120px;
+  grid-template-rows: 160px 250px 120px;
   gap: 0px 180px;
   max-width: 1080px;
   padding-top: 60px;
@@ -442,15 +442,22 @@ li {
 .subgrid-contato {
   display: grid;
   grid-template-columns: 24px 1fr;
-  grid-template-rows: 24px 24px 24px;
-  gap: 30px 10px;
+  grid-template-rows: 40px 24px 24px 24px 24px;
+  gap: 20px 10px;
   align-items: center;
+}
+
+.subgrid-contato h1 {
+  grid-column: span 2;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .subgrid-contato h3 {
   font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 400;
+  color: #cccccc;
 }
 
 .grid-qrcode {
@@ -552,11 +559,16 @@ li {
   /* CONTATO */
   .grid-contato {
     max-width: 700px;
-    grid-template-columns: 320px 320px;
-    grid-template-rows: 140px 120px 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 120px 220px 160px;
     gap: 0px 40px;
     padding-top: 40px;
+    padding-bottom: 60px;
     margin: 0 auto;
+    justify-items: center;
+  }
+  .title-contato {
+    grid-column: 1;
   }
   .grid-contato img {
     justify-self: center;
@@ -567,8 +579,11 @@ li {
   .grid-contato h3 {
     font-size: 16px;
   }
+  .grid-contato p {
+    grid-row: 5;
+  }
   .subgrid-contato {
-    gap: 16px 0px;
+    gap: 16px 8px;
     max-width: 280px;
   }
   .subgrid-contato img {
@@ -617,7 +632,7 @@ li {
   .introducao {
     max-width: 340px;
     grid-template-columns: 340px;
-    margin: 60 auto 0 auto;
+    margin: 60px auto 0 auto;
     justify-items: center;
     text-align: center;
   }
@@ -643,7 +658,7 @@ li {
     font-size: 48px;
     width: 340px;
     line-height: 60px;
-    margin: 40px 0 20px 0;
+    margin: 60px 0 20px 0;
   }
   .descricao-proj {
     grid-column: 1;
@@ -762,25 +777,32 @@ li {
   .grid-contato {
     max-width: 360px;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 100px 100px 100px 100px;
+    grid-template-rows: 100px 120px 200px 100px 100px;
     margin: 0 auto;
   }
   .title-contato {
     width: 180px !important;
     grid-column: 1;
   }
+  .grid-contato h1 {
+    text-align: center;
+    font-size: 24px;
+  }
   .grid-contato h2 {
     text-align: center;
-    font-size: 16px;
-    line-height: 20px;
-    max-width: 340px;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 280px;
     justify-self: center;
+  }
+  .grid-contato h3 {
+    font-size: 14px;
   }
   .subgrid-contato {
     justify-self: center;
   }
   .grid-contato p {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     max-width: 340px;
     justify-self: center;
