@@ -6,6 +6,7 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Portfolio Pessoal</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script>document.documentElement.classList.add("js");</script>
   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
@@ -16,7 +17,7 @@
 
 <body>
   <header class="header">
-    <nav>
+    <nav data-anime="200" class="fadeInDown">
       <img src="./img/logo.svg" alt="Logotipo">
       <ul class="menu js-menu">
         <li><a href="#experiencia">Experiência</a></li>
@@ -26,18 +27,18 @@
     </nav>
   </header>
   <main class="container">
-    <article class="introducao js-scroll">
-      <div>
+    <article class="introducao">
+      <div data-anime="300" class="fadeInLeft">
         <img src="./img/perfil-corrigido.png">
       </div>
-      <div>
+      <div data-anime="500" class="fadeInLeft">
         <h1>Desenvolvedor Front End & UX Designer Júnior</h1>
         <p>Localizado no interior de São Paulo.</p>
       </div>
-      <div class="experiencia-titulo">
+      <div data-anime="800" class="experiencia-titulo fadeInLeft">
         <h2>EXPERIÊNCIA</h2>
       </div>
-      <div class="descricao-proj" id="experiencia">
+      <div data-anime="1000" class="descricao-proj fadeInLeft" id="experiencia">
         <div class="projetos">
           <a href="#PetMonitor">
             <img class="petmonitor" src="img/projetos/petmonitor.svg" alt="">
@@ -160,6 +161,7 @@
       </section>
     </article>
   </main>
+  <script src="script/simple-anime.js"></script>
   <script src="script/scrollAnima.js"></script>
   <script src="script/scrollSuave.js"></script>
   <script src="script/script.js"></script>

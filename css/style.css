@@ -840,13 +840,37 @@ li {
   }
 }
 
-.js-scroll > div {
+/* SCROLL ANIMA */
+.js .js-scroll > div {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
   transition: 0.5s;
 }
 
-.js-scroll > div.ativo {
+.js .js-scroll > div.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+/* SIMPLE ANIME */
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(40px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-40px, 0, 0);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
 }
