@@ -1,0 +1,2 @@
+initScrollSuave();
+initAnimacaoScroll();

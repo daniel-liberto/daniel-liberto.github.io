@@ -17,8 +17,8 @@
 <body>
   <header class="header">
     <nav>
-      <img src="img/logo.svg" alt="Logotipo">
-      <ul class="menu">
+      <img src="./img/logo.svg" alt="Logotipo">
+      <ul class="menu js-menu">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -26,13 +26,17 @@
     </nav>
   </header>
   <main class="container">
-    <article class="introducao">
-      <img src="img/perfil-corrigido.png">
+    <article class="introducao js-scroll">
+      <div>
+        <img src="./img/perfil-corrigido.png">
+      </div>
       <div>
         <h1>Desenvolvedor Front End & UX Designer Júnior</h1>
         <p>Localizado no interior de São Paulo.</p>
       </div>
-      <h2>EXPERIÊNCIA</h2>
+      <div class="experiencia-titulo">
+        <h2>EXPERIÊNCIA</h2>
+      </div>
       <div class="descricao-proj" id="experiencia">
         <div class="projetos">
           <img class="petmonitor" src="img/projetos/petmonitor.svg" alt="">
@@ -46,9 +50,15 @@
     </article>
     <article class="formacao" id="formacao">
       <section class="grid-form">
-        <h2>FORMAÇÃO</h2>
-        <div>
-          <p>Minha mais recente experiência acadêmica foi a <span class="bold2">graduação</span>🎓 que fiz na Unopar em <span class="bold2">Análise e Desenvolvimento de Sistemas</span>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+        <div class="js-scroll">
+          <div>
+            <h2>FORMAÇÃO</h2>
+          </div>
+        </div>
+        <div class="js-scroll">
+          <div>
+            <p>Minha mais recente experiência acadêmica foi a <span class="bold2">graduação</span>🎓 que fiz na Unopar em <span class="bold2">Análise e Desenvolvimento de Sistemas</span>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+          </div>
           <div class="form-grid">
             <div class="form-item item1">
               <h3>HTML & CSS</h3>
@@ -132,12 +142,15 @@
         </div>
         <p>Daniel Liberto de Almeida. Alguns Direitos Reservados.</p>
         <div class="grid-qrcode">
-          <img class="qrcode" src="/img/qrcode-linkedin.svg" alt="">
+          <img class="qrcode" src="./img/qrcode-linkedin.svg" alt="">
           <h4>Linkedin QR Code</h4>
         </div>
       </section>
     </article>
   </main>
+  <script src="script/scrollAnima.js"></script>
+  <script src="script/scrollSuave.js"></script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
