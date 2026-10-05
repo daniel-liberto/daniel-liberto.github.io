@@ -1,170 +1,59 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Daniel Liberto · UI/UX Designer & Front-end Engineer</title>
+    <meta name="description" content="Daniel Liberto de Almeida designs interfaces and writes the code that ships them. Fintech products, motion and WebGL with React, TypeScript, Three.js and GSAP." />
+    <meta name="author" content="Daniel Liberto de Almeida" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://daniel-liberto.github.io/" />
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Portfolio Pessoal</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <script>document.documentElement.classList.add("js");</script>
-  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Daniel Liberto" />
+    <meta property="og:title" content="Daniel Liberto · UI/UX Designer & Front-end Engineer" />
+    <meta property="og:description" content="Design that compiles. Interfaces designed in Figma and shipped in React, with motion and WebGL." />
+    <meta property="og:url" content="https://daniel-liberto.github.io/" />
+    <meta property="og:image" content="https://daniel-liberto.github.io/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Daniel Liberto · UI/UX Designer & Front-end Engineer" />
+    <meta name="twitter:description" content="Design that compiles. Interfaces designed in Figma and shipped in React." />
+    <meta name="twitter:image" content="https://daniel-liberto.github.io/og-image.jpg" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preload" as="image" href="/images/me/daniel-studio.webp" type="image/webp" crossorigin="anonymous" />
 
-<body>
-  <header class="header">
-    <nav data-anime="200" class="fadeInDown">
-      <img src="./img/logo.svg" alt="Logotipo">
-      <ul class="menu js-menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <article class="introducao">
-      <div data-anime="300" class="fadeInLeft">
-        <img src="./img/perfil-corrigido.png">
-      </div>
-      <div data-anime="500" class="fadeInLeft">
-        <h1>Desenvolvedor Front End & UX Designer Júnior</h1>
-        <p>Localizado no interior de São Paulo.</p>
-      </div>
-      <div data-anime="800" class="experiencia-titulo fadeInLeft">
-        <h2>EXPERIÊNCIA</h2>
-      </div>
-      <div data-anime="1000" class="descricao-proj fadeInLeft" id="experiencia">
-        <div class="projetos">
-          <a href="pet-monitor">
-            <img class="petmonitor" src="img/projetos/petmonitor.svg" alt="">
-          </a>
-          <a href="#Bikcraft">
-            <img class="bikcraft" src="img/projetos/bikcraft.svg" alt="">
-          </a>
-          <a href="#Dogs">
-            <img class="dogs" src="img/projetos/dogs.svg" alt="">
-          </a>
-          <a href="#Wildbeast">
-            <img class="wildbeast" src="img/projetos/wildbeast.svg" alt="">
-          </a>
-        </div>
-        <p>Desenvolvo pequenos projetos como o Pet Monitor
-          em que no qual utilizei apenas o <span class="bold">HTML, CSS</span> e <span class="bold">Javascript</span>. Utilizando conceitos aprendidos de <span class="bold">UX</span> e <span class="bold">UI Design</span> na faculdade e em cursos online.</p>
-      </div>
-    </article>
-    <article class="formacao" id="formacao">
-      <section class="grid-form">
-        <div class="js-scroll">
-          <div>
-            <h2>FORMAÇÃO</h2>
-          </div>
-        </div>
-        <div class="js-scroll">
-          <div>
-            <p>Minha mais recente experiência acadêmica foi a <span class="bold2">graduação</span>🎓 que fiz na Unopar em <span class="bold2">Análise e Desenvolvimento de Sistemas</span>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
-          </div>
-          <div class="form-grid">
-            <div class="form-item item1">
-              <h3>HTML & CSS</h3>
-              <h4>Foco em aprender UX/UI Design</h4>
-              <p>Origamid</p>
-            </div>
-            <div class="form-item item2">
-              <h3>JAVASCRIPT</h3>
-              <h4>JS puro ou com React e Redux</h4>
-              <p>Origamid</p>
-            </div>
-            <div class="form-item item3">
-              <h3>PYTHON</h3>
-              <h4>Processo de aprendizagem em Back End</h4>
-              <p>Udemy</p>
-            </div>
-          </div>
-          <div>
-            <ul class="grid-escolar">
-              <li>
-                <img class="icon-escolar" src="img/idiomas.svg" alt="">
-                <h3>ESCOLARIDADE</h3>
-                <h4>GRAU</h4>
-              </li>
-              <li>
-                <img src="img/bolinha.svg" alt="">
-                <h5>Grau Escolar</h5>
-                <p>Ensino Superior Completo</p>
-              </li>
-              <li class="el">
-                <img src="img/bolinha.svg" alt="">
-                <h5>Inglês</h5>
-                <p>Intermediário</p>
-              </li>
-            </ul>
-            <ul class="grid-escolar">
-              <li>
-                <img class="icon-escolar" src="img/cursos.svg" alt="">
-                <h3>CURSOS INTENSIVOS</h3>
-                <h4>CARGA HORÁRIA</h4>
-              </li>
-              <li>
-                <img src="img/bolinha.svg" alt="">
-                <h5>UX Design & UI Design</h5>
-                <p>34H</p>
-              </li>
-              <li class="el">
-                <img src="img/bolinha.svg" alt="">
-                <h5>HTML & CSS</h5>
-                <p>46h</p>
-              </li>
-              <li>
-                <img src="img/bolinha.svg" alt="">
-                <h5>Javascript</h5>
-                <p>74h</p>
-              </li>
-              <li class="el">
-                <img src="img/bolinha.svg" alt="">
-                <h5>React JS</h5>
-                <p>36h</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </article>
-    <article class="contato" id="contato">
-      <section class="grid-contato">
-        <img class="title-contato" src="img/contato-title.svg" alt="">
-        <h2>Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa <span class="bold2">:)</span></h2>
-        <div class="subgrid-contato">
-          <h1>REDES SOCIAIS</h1>
-          <img src="img/outlook.svg" alt="">
-          <h3>daniel.liberto@hotmail.com</h3>
-          <img src="img/whatsapp.svg" alt="">
-          <h3>+55 (18) 99806-7305</h3>
-          <img src="img/linkedin.svg" alt="">
-          <a href="http://www.linkedin.com/in/daniel-almeida-dev">
-            <h3>linkedin.com/in/daniel-almeida-dev</h3>
-          </a>
-          <img src="img/github.svg" alt="">
-          <a href="http://www.github.com/daniel-liberto">
-            <h3>github.com/daniel-liberto</h3>
-          </a>
-        </div>
-        <p>Daniel Liberto de Almeida. Alguns Direitos Reservados.</p>
-        <div class="grid-qrcode">
-          <img class="qrcode" src="./img/qrcode-linkedin.svg" alt="">
-          <h4>Linkedin QR Code</h4>
-        </div>
-      </section>
-    </article>
-  </main>
-  <script src="script/simple-anime.js"></script>
-  <script src="script/scrollAnima.js"></script>
-  <script src="script/scrollSuave.js"></script>
-  <script src="script/script.js"></script>
-</body>
-
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Daniel Liberto de Almeida",
+        "alternateName": "Daniel Liberto",
+        "jobTitle": "UI/UX Designer & Front-end Engineer",
+        "url": "https://daniel-liberto.github.io/",
+        "image": "https://daniel-liberto.github.io/images/me/daniel-640.webp",
+        "address": { "@type": "PostalAddress", "addressLocality": "Assis", "addressRegion": "SP", "addressCountry": "BR" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Unopar" },
+        "knowsAbout": ["UI Design", "UX Design", "Design Systems", "Figma", "Adobe Illustrator", "React", "TypeScript", "Vite", "Tailwind CSS", "Three.js", "GSAP", "WebGL", "React Native", "Node.js"],
+        "sameAs": ["https://github.com/daniel-liberto", "https://www.linkedin.com/in/daniel-almeida-dev"]
+      }
+    </script>
+    <script>
+      try {
+        var l = localStorage.getItem('dl2-lang');
+        if (!l) l = (navigator.language || 'en').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en';
+        document.documentElement.lang = l === 'pt' ? 'pt-BR' : 'en';
+      } catch (e) {}
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="root"></div>
+    <noscript>Daniel Liberto · UI/UX Designer &amp; Front-end Engineer. Enable JavaScript to experience this portfolio.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

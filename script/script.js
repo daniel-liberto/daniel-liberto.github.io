@@ -1,3 +1,0 @@
-initScrollSuave();
-initAnimacaoScroll();
-new SimpleAnime();
